@@ -1,0 +1,496 @@
+/* Eric Meyer's Reset CSS v2.0 - http://meyerweb.com/eric/tools/css/reset/ */
+/* Modified by OpenAI for demonstration purposes */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Custom OpenAI modifications below */
+body {
+    box-sizing: border-box;
+}
+
+body *,
+body *::before,
+body *::after {
+    box-sizing: inherit;
+}
+
+
+/* end of reset */
+  
+ body {
+    font-family:'lato';
+ }
+ 
+.wrapper {
+    width: 100%;
+    height: auto;
+    background: #F5F8FA;
+
+}
+.navigation_bar {
+    width: 94.44444%;
+    height: 73px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid  #E0E6EA;
+    /* margin: 1.667% 2.778%; */
+    margin-bottom: 1.667%;
+    margin-left: 2.778%;
+    margin-right: 2.778%;
+    padding-top: 1.667%
+    ;
+}
+.logo {
+    width: 14.7058824%;
+    height: 73%;
+    
+}
+
+.nav_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_list {
+    list-style: none;
+    display: flex;
+}
+.nav_list li {
+    margin-right: 10px;
+    
+}
+.nav_list li:last-child {
+    margin-right: 0;
+}
+.nav_list li a {
+    text-decoration: none;
+    color: #1D2C3C;
+    ;
+
+}
+.nav_list li a:focus {
+    border:2px solid  #1179BF;
+    padding: 10px;
+    border-radius: 7px;
+}
+.main_wrapper {
+    width: 61.94%;
+    margin: 5% 18.194% 1% 18.19%;
+    height: 72.2% ;
+    display: flex;
+    flex-direction: row;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 35px 0px #2B404E18;
+    border-radius: 6px;
+    
+}
+
+.leftBar {
+    width: 65.0224%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.checkOut {
+    width: 100%;
+    height: 80px;
+    margin: 10px 0;
+    padding: 20px 49px;
+    font-weight: bolder;
+    border-bottom: 2px solid #F5F7FA;
+    text-shadow: 0px 4px 4px  #00000040;
+    ;
+}
+.checkOut .checkOut_text  {
+    width: 27.7586% ;
+    height: 54px;
+    line-height: 36px;  
+   
+ 
+}
+.informationBar {
+    height: 221px;
+    margin: 10px 0;
+    padding: 0 49px;
+    border-bottom: 2px solid  #F5F7FA;
+    ;
+}
+ .basic_info_label {
+  
+     width: auto;
+     height: 34px;
+     display: flex;
+     flex-direction: row;
+     margin-bottom: 10px;
+}
+.number_1 {
+    width: 30px;
+    height: 30px;
+    padding: 5px 10px 10px 10px;
+    color: #548BC5;
+    font-weight: bold;
+    border: 2px solid;
+    border-radius: 50px;
+    text-align: center;
+  
+}
+ .basic_info_P {
+    line-height: 21.6px;
+    font-weight: 700;
+    color:#1D2C3C;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+ }
+ .info_plate {
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 10px;
+   
+    flex-wrap: wrap;
+    
+
+ }
+ .firstName{
+    width: 49%;
+    height: 60px;
+    box-sizing: border-box;
+ }
+
+ .firstName .firstNameinput:focus{
+    border: 2px solid #1179BF;
+ }
+ .lastName {
+    width: 48%;
+    height: 60px;
+    box-sizing: border-box;
+ }
+ .lastName input:focus {
+    border: 2px solid #1179BF;
+ }
+ .E-mail {
+    width: 70%;
+ }
+ .E-mail input:focus {
+    border: 2px solid #1179BF;
+ }
+
+ input {
+    width: 100%;
+    height: 36px;
+    background: #EDEFF2;
+    border: none;
+    outline: #1179BF;
+    margin: 10px 0;
+    text-indent: 10px;
+    color: #646E7A;
+    border-radius: 5px;
+ }
+ 
+ 
+.paymentBar {
+    height: 154px;
+    margin: 10px 0;
+    padding: 0 49px;
+    border-bottom: 2px solid  #F5F7FA;
+}
+.paymentInfo_img {
+    height: 30px;
+   
+    display: flex;
+    margin-bottom: 10px;
+}
+.payment_P {
+    margin: 10px;
+    color: #1D2C3C;
+    font-weight: bold;
+}
+.cardInput {
+    display: flex;
+    width: 100%;
+}
+.credit_bar {
+  box-sizing: border-box;
+}
+
+.styled_input input {
+     box-sizing: border-box; 
+     flex-wrap: wrap;  
+}
+
+.styled_input_L {
+    width: 80%;
+}
+.styled_input_L input:focus {
+    border: 2px solid #1179BF;
+}
+.styled_input_M {
+    width: 20%;
+}
+.styled_input_M input:focus {
+    border: 2px solid #1179BF;
+}
+.styled_input_R {
+    width: 20%;
+}
+.styled_input_R input:focus {
+    border: 2px solid #1179BF;
+}
+.farLeft {
+    width: 100%;
+    border-radius: 0%;
+}
+.farLeft::placeholder {
+    text-align: left;
+}
+.middle {
+    width: 100%;
+    border-radius: 0%;
+}
+.middle::placeholder {
+    text-align: right;
+}
+.farRight {
+  
+    border-radius: 0%;
+    text-indent: 10px;
+}
+.farRight::placeholder {
+    text-align: left;
+}
+.button_n_footer {
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    
+    width: auto;
+    margin: 10px 49px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+}
+.button_n_footer button {
+    width: 100%;
+    height: 52px;
+    font-weight: bold;
+    background: #038E7D;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 5px;
+    margin-bottom: 10px; 
+}
+
+.footerL {
+    
+    margin-top: 15px;
+}
+.footerL p {
+    font-weight: bolder;
+   
+    display: inline-flex;
+}
+.footerL p .Need {
+
+   padding: 3px;
+   color:  #646E7A;
+ }
+ .footerL p img {
+
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+ }
+.footLeft {
+    color: #646E7A;
+    padding: 3px;
+
+}
+.footLeft .contact {
+    color: #646E7A;
+}
+
+.footLeft .contact:hover {
+    text-decoration: underline;
+}
+.P_image {
+    width: 19%;
+    height: 20.1px;
+    display: flex;
+    margin: 5px ;
+
+}
+.rightBar {
+    width: 34.97%;
+    background: #1179BF;
+    color: #FFFFFF;
+    height: auto;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px ;
+
+}
+.right_layout {
+    width: 74%;
+    margin: 13%;
+    height: 610px;
+}
+.first_box {
+    height: 152px;
+    display: flex;
+    flex-direction: column;
+
+}
+.freelancer {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.amount {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+}
+.sign {
+    font-weight: 700px;
+    font-size: 24px;
+    line-height: 28.8px;
+}
+.nine {
+    line-height: 72px;
+    font-size: 60px;
+}
+.year {
+    line-height: 21.6px;
+    font-size: 18px;
+}
+.auto {
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 24px;
+    font-style: italic;
+}
+.second_box {
+    height: 96px;
+    margin: 20px 0;
+}
+.second_box div {
+    display: inline-flex;
+    margin-bottom: 10px;
+}
+.second_box div:last-child {
+    margin-bottom: 0;
+}
+.second_box div img {
+    width: 20px;
+    height: 20px;
+}
+.second_box div p {
+    height: 20px;
+    margin-left: 10px;
+    font-weight: 400px;
+    font-size: 16px;
+    margin-top: 2px;
+}
+.five {
+    font-weight: 700;
+}
+.third_box {
+    height: 51px;
+    margin-bottom: 20px;
+}
+.third_box p {
+    line-height: 19.2px;
+}
+.third_box p .Switch {
+   font-weight: 700;
+   border-bottom: 2px solid rgba(185, 245, 255, .5); 
+}
+.twenty {
+    font-weight: 700;
+}
+.Switch a {
+    color: white;
+    text-decoration: none;
+}
+.last_box {
+    height: 196px;
+    border-top: 2px solid  rgba(255, 255, 255, .2);
+    ;  
+}
+.last_box p {
+    line-height: 24px;
+    margin-top: 30px;
+    font-style: italic;
+}
+.last_box p span {
+    font-weight: 700;
+}
+.kirk {
+    display: inline-flex;
+    margin-top: 15px;  
+}
+.kirk img {
+    border-radius: 50px;
+}
+.kirk p {
+    margin: 10px;
+}
+
+.wrapper footer {
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 10px ;
+}
+.wrapper footer .end {
+    color: #31708F; 
+}
